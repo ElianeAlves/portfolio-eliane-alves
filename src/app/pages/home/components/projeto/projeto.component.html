@@ -1,0 +1,13 @@
+<div class="container">
+  <h2>Projetos desenvolvidos</h2>
+  
+  <div>
+    @for(item of projetos(); track item.titulo) {
+      <div>
+        <p>{{item.titulo}}</p>
+        <i [class]="item.icone"></i>
+        <a [href]="item.link.href" [attr.aria-label]="item.link.nome" target="_blank">Ver</a>
+      </div>
+    }
+  </div>
+</div>

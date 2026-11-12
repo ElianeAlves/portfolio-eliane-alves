@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Conhecimentos</h2>
+
+  <ul>
+    @for(item of conhecimentosIcon(); track item) {
+    <li>
+      <i [class]="item.class"></i>
+    </li>
+    }
+  </ul>
+</div>
